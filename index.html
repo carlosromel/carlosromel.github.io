@@ -1,0 +1,135 @@
+  <!doctype html>
+  <html lang='pt-BR'>
+  <head>
+    <title>Romel labs'</title>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js' integrity='sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB' crossorigin='anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js' integrity='sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13' crossorigin='anonymous'></script>
+
+    <base target='_blank' />
+  </head>
+  <body>
+    <svg xmlns='http://www.w3.org/2000/svg' style='display: none;'>
+      <symbol id='check-circle-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z'/>
+      </symbol>
+      <symbol id='info-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z'/>
+      </symbol>
+      <symbol id='exclamation-triangle-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z'/>
+      </symbol>
+      <symbol id='question-mark-circle-fill' fill='currentColor' viewBox='0 0 16 16'>
+        <path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>
+        <path d='M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z'/>
+      </symbol>
+    </svg>
+    <div class='container'>
+    <p></p>
+      <div class='d-flex align-items-start'>
+        <div class='nav flex-column nav-pills me-3' id='v-pills-tab' role='tablist' aria-orientation='vertical'>
+          <button id='v-pills-intro-tab'          class='nav-link active' data-bs-toggle='pill' data-bs-target='#v-pills-intro'          type='button' role='tab' aria-controls='v-intro'                aria-selected='true' >Introdução</button>
+          <button id='v-pills-desenv-web-tab'     class='nav-link'        data-bs-toggle='pill' data-bs-target='#v-pills-desenv-web'     type='button' role='tab' aria-controls='v-pills-desenv-web'     aria-selected='false'>Desenvolvimento WEB</button>
+          <button id='v-pills-desenv-app-tab'     class='nav-link'        data-bs-toggle='pill' data-bs-target='#v-pills-desenv-app'     type='button' role='tab' aria-controls='v-pills-desenv-app'     aria-selected='false'>Desenvolvimento de apps</button>
+          <button id='v-pills-infraestrutura-tab' class='nav-link'        data-bs-toggle='pill' data-bs-target='#v-pills-infraestrutura' type='button' role='tab' aria-controls='v-pills-infraestrutura' aria-selected='false'>Infraestrutura</button>
+          <button id='v-pills-documentacao-tab'   class='nav-link'        data-bs-toggle='pill' data-bs-target='#v-pills-documentacao'   type='button' role='tab' aria-controls='v-pills-documentacao'   aria-selected='false'>Documentação</button>
+          <button id='v-pills-testes-tab'         class='nav-link'        data-bs-toggle='pill' data-bs-target='#v-pills-testes'         type='button' role='tab' aria-controls='v-pills-testes'         aria-selected='false'>Testes unitários</button>
+          <button id='v-pills-sql-complexos-tab'  class='nav-link'        data-bs-toggle='pill' data-bs-target='#v-pills-sql-complexos'  type='button' role='tab' aria-controls='v-pills-sql-complexos'  aria-selected='false'>Consultas complexas</button>
+          <button id='v-pills-extraindo-jira-tab' class='nav-link'        data-bs-toggle='pill' data-bs-target='#v-pills-extraindo-jira' type='button' role='tab' aria-controls='v-pills-extraindo-jira' aria-selected='false'>Extraindo mais do JIRA</button>
+          <button id='v-pills-contato-tab'        class='nav-link'        data-bs-toggle='pill' data-bs-target='#v-pills-contato'        type='button' role='tab' aria-controls='v-pills-contato'        aria-selected='false'>Vamos conversar?</button>
+        </div>
+
+        <div class='tab-content' id='v-pills-tabContent'>
+          <div id='v-pills-intro'          class='tab-pane fade show active' aria-labelledby='v-pills-intro-tab'          role='tabpanel'>
+            <div class='alert alert-primary d-flex align-items-center' role='alert'>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Integrando e desenvolvendo sistemas a mais tempo do que convém confessar.</div>
+            </div>
+            <div class='alert alert-secondary d-flex align-items-center' role='alert'>
+            <h4 class="alert-heading">Ajuda nos primeiros passos</h4>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Tem uma ideia e quer tirá-la do bloco de notas?</div>
+            </div>
+            <div class='alert alert-success d-flex align-items-center' role='alert'>
+            <h4 class="alert-heading">Ajuda na escolha do repertório</h4>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Quer ajuda em algo no seu projeto?</div>
+            </div>
+          </div>
+          <div id='v-pills-desenv-web'     class='tab-pane fade'             aria-labelledby='v-pills-desenv-web-tab'     role='tabpanel'>
+            <h4 class="alert-heading">Migrar o seu negócio para a Web não precisa ser um tormento</h4>
+            <div class='alert alert-danger d-flex align-items-center' role='alert'>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Tem uma solução que se beneficiaria migrando para a Web?</div>
+            </div>
+          </div>
+          <div id='v-pills-desenv-app'     class='tab-pane fade'             aria-labelledby='v-pills-desenv-app-tab'     role='tabpanel'>
+            <h4 class="alert-heading">Aplicativos nativos e multiplataforma</h4>
+            <div class='alert alert-warning d-flex align-items-center' role='alert'>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Quer construir aquele App e experimentar conceitos ou explorar mercados?</div>
+            </div>
+          </div>
+          <div id='v-pills-infraestrutura' class='tab-pane fade'             aria-labelledby='v-pills-infraestrutura-tab' role='tabpanel'>
+            <h4 class="alert-heading">Escolhas difíceis, embasadas pela prática</h4>
+            <div class='alert alert-info d-flex align-items-center' role='alert'>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Quer converar sobre escolhas difíceis na arquitetura?</div>
+            </div>
+          </div>
+          <div id='v-pills-documentacao'   class='tab-pane fade'             aria-labelledby='v-pills-documentacao-tab'   role='tabpanel'>
+            <h4 class="alert-heading">Documentação de qualidade, objetividade e eficiência</h4>
+            <div class='alert alert-dark d-flex align-items-center' role='alert'>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Quer melhorar a documetação do seu projeto?</div>
+            </div>
+          </div>
+          <div id='v-pills-testes'         class='tab-pane fade'             aria-labelledby='v-pills-testes-tab'         role='tabpanel'>
+            <h4 class="alert-heading">Aquele "vai filhão" que está faltando no seu conjunto de testes</h4>
+            <div class='alert alert-primary d-flex align-items-center' role='alert'>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Quer começar o projeto com testes ou acrescentar testes em um projeto existente?</div>
+            </div>
+          </div>
+          <div id='v-pills-sql-complexos'  class='tab-pane fade'             aria-labelledby='v-pills-sql-complexos-tab'  role='tabpanel'>
+            <h4 class="alert-heading">Consultas SQL inspiradas</h4>
+            <div class='alert alert-secondary d-flex align-items-center' role='alert'>
+              <svg class='bi flex-shrink-0 me-2' width='24' height='24' role='img' aria-label='Info:'><use xlink:href='#question-mark-circle-fill'/></svg>
+              <div>Usa bancos relacionais e gostaria de ajuda na construção de soluções/relatórios mais complexos?</div>
+            </div>
+          </div>
+          <div id='v-pills-extraindo-jira' class='tab-pane fade'             aria-labelledby='v-pills-extraindo-jira-tab' role='tabpanel'>
+            <h4 class="alert-heading">Extaindo o máximo do JIRA</h4>
+            <div class='alert alert-success d-flex align-items-center' role='alert'>
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+              <div>Para quem usa o JIRA, existem formas de extrair os dados e produzir relatórios além dos fornrecidos pela plataforma.</div>
+            </div>
+          </div>
+          <div id='v-pills-contato' class='tab-pane fade'                    aria-labelledby='v-pills-contato-tab'        role='tabpanel'>
+            <h4 class="alert-heading">Contato</h4>
+            <div class='alert alert-danger d-flex align-items-center' role='alert'>
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill"/></svg>
+              <div> Entre em contato, vamos conversar sobre o seu projeto, suas ideias, talvez possamos trabalhar juntos.
+              Escreva um bom e sempre confiável <a href='mailto:carlos.romel@gmail.com?subject=Vamos conversar?'>e-mail</a>.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr/>
+    <p style='font-size: small; text-align: right;'>
+      Contatos:
+      <a href='mailto:carlos.romel@gmail.com'>carlos.romel@gmail.com</a> /
+      <a href='https://github.com/carlosromel'>GitHub</a> /
+      <a href='https://app.slack.com/client/T7ZDL5U0Z/C811SLTFZ/user_profile/U8038BWN7'>Slack</a> /
+      <a href='https://twitter.com/carlosromel'>@carlosromel (Twitter)</a> /
+      <a href='https://web.telegram.org/#/im?p=@carlosromel'>@telegram (Telegram)</a>
+    </p>
+  </body>
+</html>
